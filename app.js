@@ -9,12 +9,12 @@ const app = express()
 
 app.get('/build-image', function (req, res) { 
     return Sharp('bookshelf.jpeg')
-    .resize(1200,630,{fit:'cover'})
-    .composite([{input:'overlay.png', gravity:"southeast"}])
+    .resize(800,400,{fit:'cover'})
     .png()
+    .composite([{input:'overlay.png', gravity:"southeast"}])
     .toBuffer()
     // .then(buffer=>Sharp(buffer)
-    //     .overlayWith(titleBuffer,{left:0,top:0})
+    //     .overlayWith('overlay.png',{left:0,top:0})
     //     .toBuffer())
     .then(buffer=>{
         const contentType = 'image/png';
