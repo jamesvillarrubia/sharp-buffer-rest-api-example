@@ -1,0 +1,27 @@
+{
+  "name": "sharp-buffer-rest-api-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesvillarrubia/sharp-buffer-rest-api-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesvillarrubia/sharp-buffer-rest-api-example/issues"
+  },
+  "homepage": "https://github.com/jamesvillarrubia/sharp-buffer-rest-api-example#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "sharp": "github:lovell/sharp#uptake"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
